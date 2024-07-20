@@ -23,7 +23,7 @@ function Userlogin() {
             body: JSON.stringify(new_user)
         };
 
-        const response = await fetch('http://localhost:5000/loginUser', requestOptions);
+        const response = await fetch('https://online-blood-donation-backend.onrender.com', requestOptions);
         const data = await response.json();
 
         if (data.message==true) {
