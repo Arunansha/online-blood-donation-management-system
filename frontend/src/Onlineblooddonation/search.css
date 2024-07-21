@@ -1,0 +1,19 @@
+.searchtable{
+    background-color: rgb(131, 103, 255,0.5);
+    margin-left: 35%;
+    width: 30vw;
+    margin-top: 20vh;
+    border-radius: 5%;
+}
+.search{
+    padding-left: 10%;
+}
+.button{
+    margin: 3% 0 2% 40%;
+}
+
+.tablehead{
+    padding: 5% 0 0 35%;
+}
+
+
