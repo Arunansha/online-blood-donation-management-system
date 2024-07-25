@@ -35,7 +35,7 @@ function Home() {
               flag == 1 ?
                 <>
                   <li class="nav-item active">
-                    <Link class="nav-link" to="/">Home <span class="sr-only">(current)</span></Link>
+                    <Link class="nav-link" to="/Home">Home <span class="sr-only">(current)</span></Link>
                   </li>
                   <li className="nav-item">
                     <Link className="nav-link" onClick={logout}>Logout</Link>
