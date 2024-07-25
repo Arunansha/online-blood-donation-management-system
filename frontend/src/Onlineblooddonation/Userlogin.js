@@ -7,7 +7,7 @@ import Home from "./Home";
 
 function Userlogin() {
 
-    
+    const navigate = useNagigate()
     
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -33,7 +33,8 @@ function Userlogin() {
             localStorage.setItem("loggedUser", email)
             setMessage("Login Successfull")
             //navigate to dashboard or home page
-            window.location.href = "https://online-blood-donation-frontend.onrender.com/home"
+            navigate("/home)
+            //window.location.href = "https://online-blood-donation-frontend.onrender.com/home"
         }
         else {
             setMessage("Login Failed")
