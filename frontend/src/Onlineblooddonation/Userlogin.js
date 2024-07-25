@@ -7,7 +7,7 @@ import Home from "./Home";
 
 function Userlogin() {
 
-    const navigate = useNagigate()
+    const navigate = useNavigate()
     
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
