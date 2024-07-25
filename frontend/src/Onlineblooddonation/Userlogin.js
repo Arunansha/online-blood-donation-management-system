@@ -33,7 +33,7 @@ function Userlogin() {
             localStorage.setItem("loggedUser", email)
             setMessage("Login Successfull")
             //navigate to dashboard or home page
-            navigate("/home)
+            navigate("/home")
             //window.location.href = "https://online-blood-donation-frontend.onrender.com/home"
         }
         else {
