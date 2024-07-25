@@ -11,6 +11,8 @@ function Donorlogin() {
     const [message, setMessage] = useState('')
     const [flag, setFlag] = useState('')
 
+    const navigate = useNavigate()
+
     const loginDonor = async () => {
         const new_donor = {
             "email": email,
