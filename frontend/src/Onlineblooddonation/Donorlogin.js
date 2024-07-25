@@ -30,7 +30,8 @@ function Donorlogin() {
             localStorage.setItem("loggedUser", email)
             setMessage("Login Successfull")
             //navigate to dashboard or home page
-            window.location.href = "/home"
+             navigate("/home")
+            //window.location.href = "/home"
         }
         else {
             setMessage("Login Failed")
