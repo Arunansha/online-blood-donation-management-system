@@ -15,7 +15,7 @@ function Home() {
   const logout = () => {
     localStorage.removeItem('loggedUser')
     //navigate to again login page
-    window.location.href = "/"
+    window.location.href = "/Home"
   }
 
 
