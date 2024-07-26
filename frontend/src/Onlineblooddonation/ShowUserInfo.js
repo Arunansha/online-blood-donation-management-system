@@ -13,7 +13,7 @@ function ShowUserInfo() {
 
   const getData = async () => {
     const email = localStorage.getItem('loggedUser')
-    const response = await fetch('https://online-blood-donation-backend.onrender.com/getUsersByEmail'+email);
+    const response = await fetch('https://online-blood-donation-backend.onrender.com/getUsersByEmail/'+email);
     const data = await response.json();
     setAllusers(data)
   }
