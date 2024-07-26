@@ -50,6 +50,9 @@ function Home() {
                   <li class="nav-item ps-2">
                     <Link class="nav-link" to="/ShowUserInfo" >ShowUserInfo</Link>
                   </li>
+                <li class="nav-item ps-2">
+                    <Link class="nav-link" to="/Payment" >Donate</Link>
+                  </li>
 
                 </>
                 :
