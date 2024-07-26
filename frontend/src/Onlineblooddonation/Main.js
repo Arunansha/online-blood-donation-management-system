@@ -19,6 +19,7 @@ import EditUser from "./EditUser";
 import "./donorlogin.css"
 import Forgotpassworduser from "./Forgotpassworduser";
 import Forgotpassworddonor from "./Forgotpassworddonor";
+import Payment from "./Payment";
 
 
 
@@ -48,6 +49,7 @@ function Main() {
                     <Route exact path="/" element={<Userlogin></Userlogin>}></Route>
                     <Route exact path="/forgotpassworduser" element={<Forgotpassworduser></Forgotpassworduser>}></Route>
                     <Route exact path="/forgotpassworddonor" element={<Forgotpassworddonor></Forgotpassworddonor>}></Route>
+                    <Route exact path="/Payment" element={<Payment></Payment>}></Route>
 
 
 
