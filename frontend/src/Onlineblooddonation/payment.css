@@ -1,0 +1,19 @@
+body {
+    background-image: url('download.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.payment {
+    background-color: rgba(131, 103, 255, 0.5);
+    margin-left: 35%;
+    width: 30vw;
+    margin-top: 30vh;
+    border-radius: 10%;
+}
+.paymentheading{
+    padding-left: 30%;
+}
+.paymentbutton{
+    margin: 5% 0% 5% 35%;
+}
