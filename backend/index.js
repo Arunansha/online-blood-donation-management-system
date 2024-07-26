@@ -223,6 +223,27 @@ app.post('/validateEmailDonor', async (req, res) => {
 })
 
 //Get all Method
+app.get('/getUsersByEmail/:email', async (req, res) => {
+    try {
+        const email = req.params.email
+        const data = await User.find({ "email": email });
+        res.json(data)
+    }
+    catch (error) {
+        res.status(500).json({ message: error.message })
+    }
+})
+
+app.get('/getDonorsByEmail/:email', async (req, res) => {
+    try {
+        const email = req.params.email
+        const data = await Donor.find({ "email": email });
+        res.json(data)
+    }
+    catch (error) {
+        res.status(500).json({ message: error.message })
+    }
+})
 app.get('/getAllDonors', async (req, res) => {
     try {
         const data = await Donor.find();
