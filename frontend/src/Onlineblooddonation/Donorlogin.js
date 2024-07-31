@@ -78,9 +78,9 @@ function Donorlogin() {
                         }
                         {
                             flag == 0 ?
-                                <i class="fa-solid fa-eye" onClick={showHide}></i>
-                                :
                                 <i class="fa-solid fa-eye-slash" onClick={showHide}></i>
+                                :
+                                <i class="fa-solid fa-eye" onClick={showHide}></i>
 
                         }
                     </td>
