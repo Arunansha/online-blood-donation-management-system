@@ -150,17 +150,22 @@ app.post('/loginDonor', async (req, res) => {
     const password = req.body.password
 
     const res1 = await Donor.find({ email: req.body.email })
+    if (res1.length > 0) {
+        const hpass = res1[0].password
 
-    const hpass = res1[0].password
+        const result = await comparePassword(password, hpass)
 
-    const result = await comparePassword(password, hpass)
+        console.log(145, result)
 
-    console.log(145, result)
+        if (result) {
+            res.send({ 'message': true })
+        }
+        else {
+            res.send({ 'message': false })
+        }
 
-    if (result) {
-        res.send({ 'message': true })
-    }
-    else {
+
+    } else {
         res.send({ 'message': false })
     }
 
@@ -170,18 +175,24 @@ app.post('/loginUser', async (req, res) => {
     const password = req.body.password
 
     const res1 = await User.find({ email: req.body.email })
+    if (res1.length > 0) {
+        const hpass = res1[0].password
 
-    const hpass = res1[0].password
+        const result = await comparePassword(password, hpass)
 
-    const result = await comparePassword(password, hpass)
+        console.log(145, result)
 
-    console.log(145, result)
+        if (result) {
+            res.send({ 'message': true })
+        }
+        else {
+            res.send({ 'message': false })
+        }
 
-    if (result) {
-        res.send({ 'message': true })
     }
     else {
         res.send({ 'message': false })
+
     }
 
 })
