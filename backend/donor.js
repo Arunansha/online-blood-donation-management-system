@@ -1,0 +1,55 @@
+const mongoose = require('mongoose');
+
+const dataSchema = new mongoose.Schema({
+    email: {
+        required: true,
+        type: String
+    },
+    name: {
+        required: true,
+        type: String
+    },
+    password: {
+        required: true,
+        type: String
+    },
+    address: {
+        required: true,
+        type: String
+    },
+    contact: {
+        required: true,
+        type: String
+    },
+    bloodgroup: {
+        required: true,
+        type: String
+    },
+    gender: {
+        required: true,
+        type: String
+    },
+    dob: {
+        required: true,
+        type: String
+    },
+    image: {
+        type: String,
+        deafult: ' '
+    },
+    image_id: {
+        type: String,
+        default: ' '
+
+    },
+    status: {
+        type: String,
+        default:'active'
+    },
+    lastdonateddate: {    
+        type: String,
+        default:''
+    },
+})
+
+module.exports = mongoose.model('Donor', dataSchema)
