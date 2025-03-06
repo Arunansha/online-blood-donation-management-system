@@ -1,0 +1,30 @@
+.user{
+    width: 30%;
+    background-color: rgba(131, 103, 255, 0.5);
+    margin-left: 35%;
+    margin-top: 10%;
+    border-radius: 10%;
+}
+.tableheaduser{
+    padding: 3% 0 0 40%;
+}
+.user1{
+    padding:0 0 5% 7%;
+    
+}
+.my-input{
+    padding-left: 3%;
+}
+
+.data3{
+    padding-left: 8vw;
+    padding-bottom: 2%;
+}
+i:hover{
+    cursor: pointer;
+}
+
+
+
+
+
